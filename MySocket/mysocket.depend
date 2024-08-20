@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1712784158 source:c:\users\tiago\downloads\suptanques_incompleto\mysocket\mysocket-teste.cpp
+	<iostream>
+	"mysocket.h"
+
+1723839509 c:\users\tiago\downloads\suptanques_incompleto\mysocket\mysocket.h
+	<string>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+
+1723645072 source:c:\users\tiago\downloads\suptanques_incompleto\mysocket\mysocket.cpp
+	"mysocket.h"
+	<sys/types.h>
+	<netdb.h>
+	<unistd.h>
+

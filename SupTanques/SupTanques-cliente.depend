@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1723645072 source:c:\users\tiago\downloads\suptanques_incompleto\mysocket\mysocket.cpp
+	"mysocket.h"
+	<sys/types.h>
+	<netdb.h>
+	<unistd.h>
+
+1723839509 c:\users\tiago\downloads\suptanques_incompleto\mysocket\mysocket.h
+	<string>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+
+1720440035 source:c:\users\tiago\downloads\suptanques_incompleto\suptanques\suptanques-cliente-main.cpp
+	<iostream>
+	<cmath>
+	"suptanques-cliente.h"
+
+1722952331 c:\users\tiago\downloads\suptanques_incompleto\suptanques\suptanques-cliente.h
+	<string>
+	<thread>
+	<mutex>
+	"suptanques.h"
+	"../MySocket/mysocket.h"
+
+1723153334 c:\users\tiago\downloads\suptanques_incompleto\suptanques\suptanques.h
+
+1722952331 source:c:\users\tiago\downloads\suptanques_incompleto\suptanques\suptanques-cliente.cpp
+	<iostream>
+	"suptanques-cliente.h"
+
+1720736127 source:c:\users\tiago\downloads\suptanques_incompleto\suptanques\suptanques.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"tanques-param.h"
+	"suptanques.h"
+
+1720734942 c:\users\tiago\downloads\suptanques_incompleto\suptanques\tanques-param.h
+
