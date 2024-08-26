@@ -33,9 +33,9 @@ SupTanksServer::~SupTanksServer()
   // Fecha todos os sockets dos clientes
   for (auto& U : LU) U.close();
   // Fecha o socket de conexoes
-  sock_server.close(); 
+  sock_server.close();
   // Encerra a biblioteca de sockets
-  mysocket::end(); 
+  mysocket::end();
 
   // Espera o fim da thread do servidor
   if (thr_server.joinable()) thr_server.join();
@@ -61,7 +61,7 @@ bool SupTanksServer::setServerOn()
 
     // Lanca a thread do servidor que comunica com os clientes
     thr_server = thread([this](){this->thr_server_main();} );
-    if (!thr_server.joinable()) throw 2; 
+    if (!thr_server.joinable()) throw 2;
 
   }
   catch(int i)
@@ -291,6 +291,7 @@ void SupTanksServer::thr_server_main(void)
                       break;
                   case CMD_LOGOUT:
                     iU->close();
+                    cout << "Usuario " << iU->login << " desconectado\n";
                     break;
                 }
               }
@@ -339,6 +340,8 @@ void SupTanksServer::thr_server_main(void)
                 iResult = iU->sock.write_int16(CMD_OK);
               }
               if (iResult != mysocket_status::SOCK_OK) throw 8;
+
+              cout << "Usuario " << iU->login << " conectado\n";
 
             } catch (int erro){
               if (erro>=5 && erro<=7)

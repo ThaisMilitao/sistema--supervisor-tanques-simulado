@@ -295,7 +295,7 @@ void SupTanquesMain::slotLogin(QString Server, QString Login, QString Passwd)
 
     // Aguarda resposta do servidor
     if (sock.read_uint16(cmd,1000*SUPTANKS_TIMEOUT) != mysocket_status::SOCK_OK) throw 5;
-
+    if (cmd == CMD_ERROR) throw 6;
     // Soh chega aqui se nao houve nenhum erro (throw)
     // Estah conectado
     connected = true;
@@ -307,7 +307,7 @@ void SupTanquesMain::slotLogin(QString Server, QString Login, QString Passwd)
     {
         this->main_thread();
     } );
-    if (!thr.joinable()) throw 6;
+    if (!thr.joinable()) throw 7;
 
 
     // Desabilita opcao conectar

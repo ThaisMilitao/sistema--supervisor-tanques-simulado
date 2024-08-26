@@ -38,3 +38,42 @@
 
 1720734942 c:\users\tiago\downloads\suptanques_incompleto\suptanques\tanques-param.h
 
+1724098730 source:c:\users\tiago\downloads\suptanques\suptanques\mysocket\mysocket.cpp
+	"mysocket.h"
+	<sys/types.h>
+	<netdb.h>
+	<unistd.h>
+
+1724098730 c:\users\tiago\downloads\suptanques\suptanques\mysocket\mysocket.h
+	<string>
+	<winsock2.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+
+1724098731 source:c:\users\tiago\downloads\suptanques\suptanques\suptanques\suptanques-cliente-main.cpp
+	<iostream>
+	<cmath>
+	"suptanques-cliente.h"
+
+1724098731 c:\users\tiago\downloads\suptanques\suptanques\suptanques\suptanques-cliente.h
+	<string>
+	<thread>
+	<mutex>
+	"suptanques.h"
+	"../MySocket/mysocket.h"
+
+1724098731 c:\users\tiago\downloads\suptanques\suptanques\suptanques\suptanques.h
+
+1724098731 source:c:\users\tiago\downloads\suptanques\suptanques\suptanques\suptanques-cliente.cpp
+	<iostream>
+	"suptanques-cliente.h"
+
+1724098731 source:c:\users\tiago\downloads\suptanques\suptanques\suptanques\suptanques.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	"tanques-param.h"
+	"suptanques.h"
+
+1724098732 c:\users\tiago\downloads\suptanques\suptanques\suptanques\tanques-param.h
+
